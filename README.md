@@ -1,67 +1,25 @@
-# the Program - 
-This code is a simple calculator program that allows 
-the user to perform basic arithmetic operations.
- Let's go through it step by step.
+# Simple Calculator
 
-# 1. The program starts by -
-asking the user to enter the first number, 
-operator, and second number. It does this by displaying messages and waiting for 
-the user to input values. The first number is stored in a variable called "first", 
-the operator is stored in a variable called "operator", 
-and the second number is stored in a variable called "second".
+This is a simple calculator program written in Python. It allows users to perform basic arithmetic operations by entering two numbers and an operator.
 
-Ex - first = input("Enter the first number: ")
-     operator = input("Enter the operator (+, -, *, /, %): ")
-     second = input("Enter the second number: ")
+Follow the on-screen instructions:
 
-# 2. Since -
-the values entered by the user are initially stored as strings, 
-we need to convert them into integers so that we can perform arithmetic operations. 
-The code uses the "int()" function to convert the "first" and "second" variables from strings to integers.
+Enter the first number when prompted.
+Enter the operator (+, -, *, /, %) to indicate the desired operation.
+Enter the second number when prompted.
+The program will display the result of the arithmetic operation based on the provided input.
 
-Ex - first = int(first)
-    second = int(second)
+Supported Operations
+The calculator supports the following operations:
 
-# 3. Next, -
-the program prints "The Answer is :" to indicate that the result 
-of the calculation will be displayed next.
+Addition (+): Add the first number and the second number.
+Subtraction (-): Subtract the second number from the first number.
+Multiplication (*): Multiply the first number by the second number.
+Division (/): Divide the first number by the second number.
+Modulus (%): Compute the remainder when the first number is divided by the second number.
+Note: If an invalid operator is entered, the program will display an "Invalid operation" message.
 
-print("The answer is:")
-
-# 4. Now comes the part where the actual calculation happens -
-The code uses an if-elif-else block to determine which arithmetic operation 
-to perform based on the value of the "operator" variable.
-
-# If the operator is "+", it adds the "first" and "second" numbers together and prints the result.
-EX - if operator == "+":
-    print(first + second)
-
-# If the operator is "-", it subtracts the "second" number from the "first" number and prints the result.
-EX - elif operator == "-":
-    print(first - second)
-
-# If the operator is "*", it multiplies the "first" and "second" numbers and prints the result.
-EX - elif operator == "*":
-    print(first * second)
-
-# If the operator is "/", it divides the "first" number by the "second" number and prints the result.
-EX - elif operator == "/":
-    print(first / second) 
-
-# If the operator is "%", it performs the modulus operation on the "first" number with the "second" number and 
-prints the result.
-EX - elif operator == "%":
-    print(first % second)  
-
-# If none of the above conditions are met, 
-it means an invalid operator was entered. In that case, 
-the program prints "Invalid Operation" to indicate that the operator provided is not recognized.
-
-EX - else:
-    print("Invalid operation") 
-
-and displays the result. 
-Feel free to ask 
-
-#if you have any further -
-questions or if there's anything specific you would like to understand better!
+Requirements
+Python 3.x
+Contribution
+Contributions to the project are welcome! If you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
