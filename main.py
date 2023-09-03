@@ -24,3 +24,5 @@ elif operator == "%":
 else:
     print("Invalid operation")  # The entered operator is not supported
 
+# thanx
+
